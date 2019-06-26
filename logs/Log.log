@@ -153,3 +153,95 @@ java.sql.SQLSyntaxErrorException: ORA-00904: "PASSWORD": invalid identifier
 2019-06-25 20:08:19 INFO  ControlHandler:25 - You are signed in
 2019-06-25 20:31:49 INFO  ControlHandler:26 - You are signed in
 2019-06-25 20:32:27 INFO  ControlHandler:26 - You are signed in
+2019-06-25 22:50:58 INFO  ControlHandler:26 - You are signed in
+2019-06-25 22:54:41 ERROR ControlHandler:29 - Invalid Username/Password.
+2019-06-25 22:55:32 ERROR ControlHandler:29 - Invalid Username/Password.
+2019-06-25 22:55:51 INFO  ControlHandler:26 - You are signed in
+2019-06-25 22:58:13 INFO  ControlHandler:26 - You are signed in
+2019-06-25 23:02:01 ERROR ControlHandler:29 - Invalid Username/Password.
+2019-06-25 23:02:14 INFO  ControlHandler:26 - You are signed in
+2019-06-25 23:02:14 ERROR ControlHandler:31 - Invalid Username/Password.
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.GeneratedScrollableResultSet.getInt(GeneratedScrollableResultSet.java:508)
+	at com.revature.controller.ControlHandler.login(ControlHandler.java:27)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:78)
+	at com.revature.Main.main(Main.java:22)
+2019-06-25 23:02:38 INFO  ControlHandler:26 - You are signed in
+2019-06-25 23:02:38 ERROR ControlHandler:31 - Invalid Username/Password.
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.GeneratedScrollableResultSet.getInt(GeneratedScrollableResultSet.java:508)
+	at com.revature.controller.ControlHandler.login(ControlHandler.java:27)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:78)
+	at com.revature.Main.main(Main.java:22)
+2019-06-25 23:04:10 ERROR ControlHandler:30 - Invalid Username/Password.
+2019-06-25 23:04:34 INFO  ControlHandler:26 - You are signed in
+2019-06-25 23:06:01 INFO  ControlHandler:26 - You are signed in
+2019-06-25 23:06:58 INFO  ControlHandler:26 - You are signed in
+2019-06-25 23:08:01 INFO  ControlHandler:26 - You are signed in
+2019-06-25 23:23:02 INFO  ControlHandler:26 - You are signed in
+2019-06-25 23:23:35 INFO  ControlHandler:26 - You are signed in
+2019-06-25 23:40:39 ERROR ControlHandler:29 - Invalid Username/Password.
+2019-06-25 23:40:58 INFO  ControlHandler:26 - You are signed in
+2019-06-25 23:42:17 INFO  ControlHandler:26 - You are signed in
+2019-06-25 23:44:49 INFO  ControlHandler:26 - You are signed in
+2019-06-25 23:44:58 ERROR ControlHandler:94 - Cannot select.
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setLongInternal(OraclePreparedStatement.java:5270)
+	at oracle.jdbc.driver.OraclePreparedStatement.setLong(OraclePreparedStatement.java:5257)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setLong(OraclePreparedStatementWrapper.java:217)
+	at com.revature.service.Transaction.showBalance(Transaction.java:84)
+	at com.revature.service.Transaction.transferFund(Transaction.java:48)
+	at com.revature.controller.ControlHandler.options(ControlHandler.java:68)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:103)
+	at com.revature.Main.main(Main.java:22)
+2019-06-25 23:45:41 INFO  ControlHandler:26 - You are signed in
+2019-06-25 23:45:49 ERROR ControlHandler:94 - Cannot select.
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setIntInternal(OraclePreparedStatement.java:5223)
+	at oracle.jdbc.driver.OraclePreparedStatement.setInt(OraclePreparedStatement.java:5210)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setInt(OraclePreparedStatementWrapper.java:209)
+	at com.revature.service.Transaction.showBalance(Transaction.java:84)
+	at com.revature.service.Transaction.transferFund(Transaction.java:48)
+	at com.revature.controller.ControlHandler.options(ControlHandler.java:68)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:103)
+	at com.revature.Main.main(Main.java:22)
+2019-06-25 23:46:28 INFO  ControlHandler:26 - You are signed in
+2019-06-25 23:46:35 ERROR ControlHandler:94 - Cannot select.
+java.sql.SQLException: ResultSet.next was not called
+	at oracle.jdbc.driver.GeneratedScrollableResultSet.getFloat(GeneratedScrollableResultSet.java:472)
+	at com.revature.service.Transaction.showBalance(Transaction.java:86)
+	at com.revature.service.Transaction.transferFund(Transaction.java:48)
+	at com.revature.controller.ControlHandler.options(ControlHandler.java:68)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:103)
+	at com.revature.Main.main(Main.java:22)
+2019-06-25 23:52:11 INFO  ControlHandler:26 - You are signed in
+2019-06-25 23:55:16 INFO  ControlHandler:26 - You are signed in
+2019-06-26 00:02:12 INFO  ControlHandler:26 - You are signed in
+2019-06-26 00:02:53 INFO  ControlHandler:26 - You are signed in
+2019-06-26 00:04:06 INFO  ControlHandler:26 - You are signed in
+2019-06-26 00:05:12 INFO  ControlHandler:26 - You are signed in
+2019-06-26 00:06:40 INFO  ControlHandler:26 - You are signed in
+2019-06-26 00:07:46 INFO  ControlHandler:26 - You are signed in
+2019-06-26 00:07:52 ERROR ControlHandler:97 - Cannot select.
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setLongInternal(OraclePreparedStatement.java:5270)
+	at oracle.jdbc.driver.OraclePreparedStatement.setLong(OraclePreparedStatement.java:5257)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setLong(OraclePreparedStatementWrapper.java:217)
+	at com.revature.service.Transaction.showBalance(Transaction.java:84)
+	at com.revature.service.Transaction.transferFund(Transaction.java:48)
+	at com.revature.controller.ControlHandler.options(ControlHandler.java:68)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:103)
+	at com.revature.Main.main(Main.java:22)
+2019-06-26 00:08:48 INFO  ControlHandler:26 - You are signed in
+2019-06-26 00:17:35 INFO  ControlHandler:26 - You are signed in
+2019-06-26 00:35:21 INFO  ControlHandler:25 - You are signed in
+2019-06-26 07:10:13 INFO  ControlHandler:25 - You are signed in
+2019-06-26 07:16:47 INFO  ControlHandler:25 - You are signed in
+2019-06-26 08:14:36 INFO  ControlHandler:25 - You are signed in
+2019-06-26 08:15:23 ERROR ControlHandler:28 - Invalid Username/Password.
+2019-06-26 08:15:46 INFO  ControlHandler:25 - You are signed in
+2019-06-26 08:16:21 INFO  ControlHandler:25 - You are signed in
+2019-06-26 08:16:38 ERROR ControlHandler:75 - Specified User does not exist
+2019-06-26 14:44:06 INFO  ControlHandler:25 - You are signed in
+2019-06-26 14:44:22 ERROR ControlHandler:28 - Invalid Username/Password.
+2019-06-26 14:44:39 INFO  ControlHandler:25 - You are signed in

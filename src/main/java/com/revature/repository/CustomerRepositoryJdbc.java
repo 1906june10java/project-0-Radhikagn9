@@ -47,6 +47,10 @@ public class CustomerRepositoryJdbc implements CustomerRepository {
 			statement.setString(++statementIndex, customer.getLastName().toUpperCase());
 			statement.setString(++statementIndex, customer.getUsername().toLowerCase());
 			statement.setString(++statementIndex, customer.getPassword());
+			statement.setString(++statementIndex, customer.getEmail());
+			statement.setLong(++statementIndex, customer.getAccno());
+			statement.setLong(++statementIndex, customer.getPhoneNumber());
+			
 
 			if(statement.executeUpdate() > 0) {
 				return true;
@@ -64,7 +68,7 @@ public class CustomerRepositoryJdbc implements CustomerRepository {
 			int statementIndex = 0;
 
 
-			String command = "{CALL INSERT_Customer(?,?,?,?)}";
+			String command = "{CALL INSERT_Customer(?,?,?,?,?,?,?,?)}";
 
 			//Notice the CallableStatement
 			CallableStatement statement = connection.prepareCall(command);
@@ -75,7 +79,9 @@ public class CustomerRepositoryJdbc implements CustomerRepository {
 			statement.setString(++statementIndex, customer.getLastName().toUpperCase());
 			statement.setString(++statementIndex, customer.getUsername().toLowerCase());
 			statement.setString(++statementIndex, customer.getPassword());
-
+			statement.setLong(++statementIndex, customer.getAccno());
+			statement.setLong(++statementIndex, customer.getPhoneNumber());
+			statement.setString(++statementIndex, customer.getEmail());
 			if(statement.executeUpdate() > 0) {
 				return true;
 			}
@@ -96,11 +102,14 @@ public class CustomerRepositoryJdbc implements CustomerRepository {
 			List<Customer> customerList = new ArrayList<>();
 			while(result.next()) {
 				customerList.add(new Customer(
-						result.getInt("C_ID"),
+						result.getLong("C_ID"),
 						result.getString("C_FIRSTNAME"),
 						result.getString("C_LASTNAME"),
 						result.getString("C_USERNAME"),
-						result.getString("C_PASSWORD")
+						result.getString("C_PASSWORD"), 
+						result.getLong("C_ACCNO"), 
+						result.getLong("C_PHONENUMBER"),
+						result.getString("C_EMAIL")
 						));
 			}
 
@@ -147,7 +156,10 @@ public class CustomerRepositoryJdbc implements CustomerRepository {
 						result.getString("C_FIRSTNAME"),
 						result.getString("C_LASTNAME"),
 						result.getString("C_USERNAME"),
-						result.getString("C_PASSWORD")
+						result.getString("C_PASSWORD"), statementIndex, statementIndex, command
+						result.getLong("C_ACCNO"), 
+						result.getLong("C_PHONENUMBER"),
+						result.getString("C_EMAIL")
 						);
 			}
 		} catch (SQLException e) {
@@ -169,30 +181,14 @@ public class CustomerRepositoryJdbc implements CustomerRepository {
 	}
 
 
-	public static void main(String[] args) {
-
-		CustomerRepository repository = new CustomerRepositoryJdbc();
-		repository.create(
-				new Customer(005,
-						"Ben",
-						"Air",
-						"bair",
-						"paswordbair"
-
-						)
-				);
-
-
-		//Logger.info(repository.findByName("Ben"));
-
-
+	
 	}
 
 
 
 
 
-}
+
 
 
 
