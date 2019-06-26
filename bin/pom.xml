@@ -6,7 +6,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-	<!-- Change project to Java 8 -->
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 
@@ -29,13 +28,6 @@
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
-		</dependency>
-		
-		<!-- OJDBC7 Local Maven Repository -->
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc7</artifactId>
-			<version>12.1.0</version>
 		</dependency>
 	</dependencies>
 </project>

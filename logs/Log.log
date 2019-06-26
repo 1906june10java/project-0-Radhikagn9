@@ -1,0 +1,155 @@
+2019-06-21 11:43:50 ERROR Main:36 - could not connect.
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@myrevaturerds.cdwbno13di1z.us-east-1.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.Main.getConnection(Main.java:25)
+	at com.revature.Main.main(Main.java:32)
+2019-06-21 11:49:09 ERROR Main:36 - could not connect.
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@myrevaturerds.cdwbno13di1z.us-east-1.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.Main.getConnection(Main.java:25)
+	at com.revature.Main.main(Main.java:32)
+2019-06-21 11:56:45 ERROR Main:35 - Could not connect.
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@myrevaturerds.cdwbno13di1z.us-east-1.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.Main.getConnection(Main.java:25)
+	at com.revature.Main.main(Main.java:32)
+2019-06-21 15:11:30 ERROR ConnectionUtil:31 - Could not connect.
+java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@myrevaturerds.cdwbno13di1z.us-east-1.rds.amazonaws.com:1521:ORCL
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:22)
+	at com.revature.util.ConnectionUtil.main(ConnectionUtil.java:28)
+2019-06-22 15:24:39 INFO  ConnectionUtil:28 - Connection successful
+2019-06-23 11:32:43 INFO  ConnectionUtil:28 - Connection successful
+2019-06-23 12:22:40 INFO  ConnectionUtil:28 - Connection successful
+2019-06-23 12:22:56 INFO  ConnectionUtil:28 - Connection successful
+2019-06-24 10:41:38 INFO  ConnectionUtil:28 - Connection successful
+2019-06-24 16:29:51 INFO  ConnectionUtil:28 - Connection successful
+2019-06-24 22:08:55 ERROR ControlHandler:28 - Invalid Username/Password.
+java.sql.SQLSyntaxErrorException: ORA-00904: "PASSWORD": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.controller.ControlHandler.login(ControlHandler.java:23)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:56)
+	at com.revature.Main.main(Main.java:22)
+2019-06-24 22:09:32 ERROR ControlHandler:28 - Invalid Username/Password.
+java.sql.SQLSyntaxErrorException: ORA-00904: "PASSWORD": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.controller.ControlHandler.login(ControlHandler.java:23)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:56)
+	at com.revature.Main.main(Main.java:22)
+2019-06-24 22:21:27 ERROR ControlHandler:29 - Invalid Username/Password.
+java.sql.SQLSyntaxErrorException: ORA-00904: "PASSWORD": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.controller.ControlHandler.login(ControlHandler.java:23)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:57)
+	at com.revature.Main.main(Main.java:22)
+2019-06-24 22:22:50 ERROR ControlHandler:29 - Invalid Username/Password.
+java.sql.SQLSyntaxErrorException: ORA-00904: "PASSWORD": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.controller.ControlHandler.login(ControlHandler.java:23)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:59)
+	at com.revature.Main.main(Main.java:22)
+2019-06-24 22:24:21 ERROR ControlHandler:29 - Invalid Username/Password.
+java.sql.SQLSyntaxErrorException: ORA-00904: "PASSWORD": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.controller.ControlHandler.login(ControlHandler.java:23)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:57)
+	at com.revature.Main.main(Main.java:22)
+2019-06-24 22:24:41 ERROR ControlHandler:29 - Invalid Username/Password.
+java.sql.SQLSyntaxErrorException: ORA-00904: "PASSWORD": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.controller.ControlHandler.login(ControlHandler.java:23)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:57)
+	at com.revature.Main.main(Main.java:22)
+2019-06-24 22:33:51 INFO  ControlHandler:24 - You are signed in
+2019-06-25 16:44:13 INFO  ControlHandler:25 - You are signed in
+2019-06-25 20:08:19 INFO  ControlHandler:25 - You are signed in
+2019-06-25 20:31:49 INFO  ControlHandler:26 - You are signed in
+2019-06-25 20:32:27 INFO  ControlHandler:26 - You are signed in
